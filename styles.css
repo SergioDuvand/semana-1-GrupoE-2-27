@@ -6,8 +6,11 @@ img.imagen{
     border-color:darkgreen;
 }
 .divC1{
+    margin-bottom: 20px;
+    overflow: auto;
     box-sizing: border-box;
     width: 35%;
+    height:520px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -19,8 +22,10 @@ img.imagen{
    
 }
 .divC2{
+    overflow: auto;
     box-sizing: border-box;
     width: 35%;
+    height:520px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -30,8 +35,10 @@ img.imagen{
     border-color:darkgreen;
 }
 .divC3{
+    overflow: auto;
     box-sizing: border-box;
     width: 30%;
+    height: 520px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -50,20 +57,22 @@ img.imagen{
 }   
 
 .tituloSc4{
+    margin-top: 100px;
     color: #373636;
     text-align: center;
     background-color: #f3730b;
 }
 
-.presentacionIntegrantes section{
+.presentacionIntegrantes div{
+    box-sizing: border-box;
     color: #373636;
     background-color: #f3730b;
     display: inline-block;
     overflow: hidden;
     border-radius: 10px;
     padding: 10px;
-    margin-left: 2px;
-    width: 145px;
+    margin-left: 7px;
+    width: 19%;
     height: 470px;
     box-sizing: border-box;
     font-size: 12px;
