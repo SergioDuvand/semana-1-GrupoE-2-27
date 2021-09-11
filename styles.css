@@ -1,5 +1,5 @@
 
-
+/*Seccion de servicios*/
 img.imagen{
     box-sizing: border-box;
     width: 80%;
@@ -63,6 +63,7 @@ img.imagen{
     border-radius: 20px;
     border: 1.5px solid #006400;
     margin-left: 20px;
+    
 }   
 
 .tituloSc4{
