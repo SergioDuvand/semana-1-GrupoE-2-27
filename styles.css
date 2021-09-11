@@ -1,14 +1,16 @@
 
+
 img.imagen{
     box-sizing: border-box;
-    width: 100%;
+    width: 80%;
     border-style:solid;
     border-color:darkgreen;
+    border-collapse: collapse;
 }
 .divC1{
     overflow: auto;
     box-sizing: border-box;
-    width: 35%;
+    width: 60%;
     height:520px;
     padding: 0;
     margin: 0;
@@ -17,14 +19,20 @@ img.imagen{
     background-color: #f3730b;
     border-style:solid;
     border-color:darkgreen;
+    border-collapse: collapse;
 
    
+}
+
+.divContenedor{
+    width: 40%;
+    height:520px;
 }
 .divC2{
     overflow: auto;
     box-sizing: border-box;
-    width: 35%;
-    height:520px;
+    width: 100%;
+    height:260px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -32,12 +40,13 @@ img.imagen{
     background-color: #f3730b;
     border-style:solid;
     border-color:darkgreen;
+    border-collapse: collapse;
 }
 .divC3{
     overflow: auto;
     box-sizing: border-box;
-    width: 30%;
-    height: 520px;
+    width: 100%;
+    height:260px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -45,6 +54,7 @@ img.imagen{
     background-color: #f3730b;
     border-style:solid;
     border-color:darkgreen;
+    border-collapse: collapse;
 }
 /*----------------------------------------*/
 .foto {
@@ -81,4 +91,44 @@ img.imagen{
     background-color: #111;
     border-style: solid;
 
+}
+/*Footer*/
+footer{
+    background-color: #f3730b;
+    border-radius: 15px;
+    margin: 7px;
+    
+    
+    
+}
+hr{
+    color: darkgreen;
+}
+.twitter ,.facebook{
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 6px;
+    height: 25px;
+}
+.legalidad{
+    float: right;
+    
+}
+h4{
+    color: #373636;
+    font-size: small;
+}
+.redes-sociales hr{
+    color: darkgreen;
+    border-style: solid;
+    margin: 7px;
+    
+}
+.legalidad{
+    margin: 20px;
+    margin-top: auto;
+}
+.footer-right{
+    margin: 20px;
+    margin-top: auto;
 }

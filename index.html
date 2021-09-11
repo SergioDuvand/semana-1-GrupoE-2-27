@@ -6,9 +6,15 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body>
-    <header></header>
-    <article >
+<body style="background-color:#f3730b">
+    <header>
+        <h1></h1>
+        
+    </header>
+    <article ></article>
+
+     <article style="margin-bottom: 20px;">
+
         <div class="divC1" style="float:left">
             <h2  >MENÚ </h2>
             <P>Disfruta de nuestras deliciosas preparaciones, todas basadas en la gastronimia Colombiana </P>
@@ -17,7 +23,7 @@
             <p>Bandeja Paisa</p>
             <img  class="imagen" src="images/rigion andina/bandeja-paisa.jpg" alt="Bandeja paisa">
             <p>Changua</p>
-            <img  class="imagen" src="images/rigion andina/changua.jpg" alt="Changua">
+            <img  class="imagen" src="images/rigion andina/changua.jpg" alt="Changua" width="70%" height="70%">
             <h3>Region Pacifica</h3>
             <p>Arroz Atollado con Carne Ahumada</p>
             <img  class="imagen" src="images/region del pacifico/arroz-atollado-de-carne-ahumada-1603.jpg" alt="Arroz atollado y carne Ahumada">
@@ -40,32 +46,19 @@
             <img class="imagen" src="images/region del amazonas/gamitanasada.jpg" alt="Gamintana Asada">            
             
         </div>
-        <div class="divC2" style="float:right">
+        <div class="divContenedor" style="float:right">
+        <div class="divC2">
             <h2>COMPARTE UNA RECETA</h2>
+            <p>Compartenos tus recetas favoritas</p>
 
         </div>
-        <div CLASS="divC3 " style="float:right">
+        <div CLASS="divC3 " >
             <h2>PRUEBA NUESTRAS DELICIOSAS RECETAS</h2>
             <p>queremos comparir contigo nuestras recetas</p>
-            <p>animate a preparar estos deliciosos platos por tu cuenta</p>
-            <h3>Bandeja Paisa</h3>
-            <h4>Ingredientes</h4>
-            <p>1 1/2 cucharadas de aceite (21 g)
-                2 tallos de cebolla larga finamente picada (30 g)
-                2 tomates maduros sin piel y finamente picados (240 g)
-                1 sobre de caldo de (9 g)
-                3 tazas de agua (750 ml)
-                1/2 libra de fríjoles bola roja remojados desde la noche anterior (250 g)
-                1/4 libra de carne molida magra (125 g)
-                1/2 libra de arroz blanco cocinado (250 g)
-                1/4 de libra de tocino crocante cortado en 4 porciones (125 g)
-                4 chorizos tipo coctel previamente cocinados y dorados (120 g)
-                4 huevos fritos (200 g)
-                1 aguacate partido en 4 porciones (110 g)
-                4 arepas pequeñas redondas (80 g)
-                4 tajadas de plátano maduro fritas (80 g)</p>
-            
+            <p>animate a preparar estos deliciosos platos por tu cuenta</p>  
         </div>
+        </div>
+
     </article>
     <article>
 
@@ -113,8 +106,38 @@
             <p>Realice un técnico en manipulación de alimentos, y también un curso de programación básica en Platzi, actualmente estoy estudiando un diplomado en inglés y soy estudiante en la UTP gracias al programa de formación MinTIC.</p>
         </div>
     </article>
-    <footer>
+    <footer style="padding-bottom: 1%;">
+        <div class="redes-sociales">
+            <div class="twitter">
+					<img class="twitterimg" src="https://d25dk4h1q4vl9b.cloudfront.net/bundles/front/media/images/footer/twitter.png" alt="Twitter">
+			</div>
+        <hr>
+			<div class="facebook">
+					<img class="facebook-image social-image" src="https://d25dk4h1q4vl9b.cloudfront.net/bundles/front/media/images/footer/facebook.png" alt="Facebook">
+			</div>
+        <hr>
+        </div>
 
+		<div class="legalidad">
+
+				<div class="terminos-y-condiciones">
+					<h4>Términos y Condiciones</h4>
+				</div>
+
+				<div class="footer-legals-item">
+					<h4>Política de Tratamiento de Datos Personales</h4>
+				</div>
+
+			</div>
+			<div class="footer-right">
+                <h4>Designed and developed by Smartteam</h4>
+				<h4>Todos los derechos reservados – Colombian Food <span id="current-year"></span> </h4>
+				<script type="text/javascript">
+				  document.querySelector('#current-year').innerHTML = new Date().getFullYear();
+				</script>
+			</div>
+		</div>
+	</div> 
     </footer>
 </body>
 </html>
