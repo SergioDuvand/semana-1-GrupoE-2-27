@@ -92,6 +92,13 @@ img.imagen{
     border-style: solid;
 
 }
+/* Noticias */
+.news{
+    border-radius: 10px;
+    background-color: #f3730b;
+}
+
+
 /*Footer*/
 footer{
     background-color: #f3730b;
@@ -132,3 +139,4 @@ h4{
     margin: 20px;
     margin-top: auto;
 }
+
