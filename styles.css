@@ -20,8 +20,6 @@ img.imagen{
     border-style:solid;
     border-color:darkgreen;
     border-collapse: collapse;
-
-   
 }
 
 .divContenedor{
@@ -89,14 +87,28 @@ img.imagen{
     color: darkgreen;
     background-color: #111;
     border-style: solid;
-
 }
+
 /* Noticias */
-.news{
+.newsNoticia{
     border-radius: 10px;
     background-color: #f3730b;
+    padding: 2%;
+    margin: 1%;
 }
-
+.imgNoticia{
+    margin-right: 3%;
+    border: 1.5px solid #006400;
+}
+.linkNoticia{
+    color: #006400;
+}
+.encabezado2{
+    color: #006400;
+}
+.encabezado3{
+    color: #006400;
+}
 
 /*Footer*/
 footer{
@@ -138,4 +150,3 @@ h4{
     margin: 20px;
     margin-top: auto;
 }
-
