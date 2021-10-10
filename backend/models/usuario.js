@@ -2,13 +2,13 @@ const mongoose= require('mongoose');
 const Schema= mongoose.Schema ;
 
 
-const usuarioSchema= new Schema({
+const db_users= new Schema({
     usuario: String,
     password: String
 });
 
 //Convertir a modelo
 
-const usuario= mongoose.model('Usuario', usuarioSchema);
+const usuario= mongoose.model('Usuario', db_users);
 
 module.exports= usuario;
