@@ -1,7 +1,14 @@
 const express = require('express');
 const app= express();
 const path = require('path');
+const cors = require('cors');
 
+var corsOpstions= {
+    origin: '/*/',  
+    optionSuccessStatus: 200
+}
+
+app.use(cors(corsOpstions));
 
 //Conexion a base de datos
 const mongoose = require('mongoose');

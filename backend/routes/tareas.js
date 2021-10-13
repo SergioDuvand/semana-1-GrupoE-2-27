@@ -11,7 +11,7 @@ const usuario = require('../models/usuario')
 
 rutas.post('/registrar-usuario', async (req,res, next) =>{
     const userExist= await usuario.findOne({usuario: req.body.usuario});
-    if(userExist){
+    if(userExist == true){
         return res.status(400).json({error: 'El usuario ya está registrado'})
     }
     const encrypt= await bcrypt.genSalt(10);
