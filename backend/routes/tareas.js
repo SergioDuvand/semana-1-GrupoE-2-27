@@ -1,7 +1,7 @@
 const express= require('express');
 const jwt = require('jsonwebtoken');
 //-------------------
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
 //-------------------
 const rutas = express.Router();
 
@@ -13,7 +13,7 @@ const { restart } = require('nodemon');
 
 rutas.post('/registrar-usuario', async (req,res, next) =>{
     const userExist= await usuario.findOne({usuario: req.body.usuario});
-    if(userExist == true){
+    if(userExist){
         return res.status(400).json({error: 'El usuario ya está registrado'})
     }
     const encrypt= await bcrypt.genSalt(10);
@@ -64,16 +64,25 @@ rutas.post('/login', async (req,res)=>{
         error: null,
         data: 'Inicio exitoso'
     });
+
+    const token = jwt.sign({
+        usuario: user.usuario,
+        id: user._id
+    }, "Inf0rmaci0n_Usuario");
+
+    res.header('auth-token', token).json({
+        error: null,
+        data: {token}
+    })
 })
 
-//recetas
+//Agregar recetas
 rutas.post('/Recetas', async (req,res)=> {
     try{
         const recetasDB = await recetas.create(req.body);
         res.status(200).json(recetasDB);
     } catch {
-        return 
-            res.status(500).json({
+        return res.status(500).json({
             mensaje: 'Ocurrio un error',
             error
         })
