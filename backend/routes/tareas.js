@@ -35,7 +35,7 @@ rutas.post('/registrar-usuario', async (req,res, next) =>{
 
 //Logear
 
-rutas.get('/login', async (req,res)=> {
+/* rutas.get('/login', async (req,res)=> {
     try{
         const user= await usuario.find();
         res.json(user);
@@ -45,6 +45,23 @@ rutas.get('/login', async (req,res)=> {
             error
         })
     }
+}) */
+rutas.post('/login', async (req,res)=>{
+    const user= await usuario.findOne({usuario: req.body.usuario});
+    if(!user){
+        return res.status(404).json({error: 'El usuario no está registrado'});
+    }
+
+    const validPassword= await bcrypt.compare(req.body.password, user.password);
+
+    if(!validPassword){
+        return res.status(401).json({error: 'La contraseña no es valida'});
+    }
+
+    res.json({
+        error: null,
+        data: 'Inicio exitoso'
+    });
 })
 
 //Otras tareas
