@@ -70,10 +70,10 @@ rutas.post('/login', async (req,res)=>{
         id: user._id
     }, "Inf0rmaci0n_Usuario");
 
-    res.header('auth-token', token).json({
+    /* res.header('auth-token', token).json({
         error: null,
         data: {token}
-    })
+    }) */
 })
 
 //Agregar recetas
