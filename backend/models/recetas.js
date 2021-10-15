@@ -3,7 +3,10 @@ const Schema= mongoose.Schema ;
 
 
 const db_recetas= new Schema({
+    
     receta: String,
+    ingredientes: String,
+    preparacion: String,
     autor: String,
     date:{type:Date, default:Date.now}
 });
